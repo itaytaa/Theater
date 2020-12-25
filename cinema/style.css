@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(255,255,255);
+}
+
+.seat {
+    background: linear-gradient(to top, rgb(92, 6, 6), rgb(126, 43, 43), rgb(148, 27, 27), rgb(179, 11, 11), red);
+}
+
+.cell {
+    height: 50px;
+    width:30px;
+    border-radius: 7px;
+
+}
+
+.left{
+    transform: skew(-4deg);
+    box-shadow:0px 5px 5px 0px rgba(34, 33, 33, 0.75);
+    color:#290808;
+}
+.right{
+    transform: skew(4deg);
+    box-shadow: 0px 5px 5px 0px rgba(34, 33, 33, 0.75);
+}
+
+.selected {
+    background: rgb(204, 155, 48);
+
+}
+
+.seat:not(.selected):hover {
+    background: gray;
+}
+
+table {
+   position: absolute;
+  top:190px;
+   left:400px;
+    border-spacing: 5px;
+}
+
+.pop-up {
+    position: absolute; 
+    background: rgb(248, 146, 51);
+   left: 590px;
+    width: 135px;
+    height: 120px;
+    line-height: 40px;
+    padding: 20px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 5px 6px 22px 15px rgba(0,0,0,0.34);
+}
+
+.booked{
+background: aquamarine;
+
+}
